@@ -1,0 +1,28 @@
+
+Configurar Variáveis de Ambiente:
+=================================
+set path=d:\apache-maven-3.9.0\bin;%path%;
+set JAVA_PATH="D:\Java\jdk-17.0.10+7\
+set PATH="D:\Java\jdk-17.0.10+7\bin";%path%;
+
+Compilar o Projeto Antes de Instalar o Plugin e Analisar no SonarQube:
+======================================================================
+mvn clean install
+
+
+Instalar o plugin:
+==================
+mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar -Dsonar.login="admin" -Dsonar.password="123"
+
+
+Rodar do analise do SonarQube:
+==============================
+D:\apache-maven-3.9.0\bin\mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.10.0.2594:sonar -Dsonar.login="admin" -Dsonar.password="123"
+
+
+Apache Maven 3.9.0 (9b58d2bad23a66be161c4664ef21ce219c2c8584)
+Maven home: d:\apache-maven-3.9.0
+Java version: 17.0.10, vendor: Microsoft, runtime: D:\Java\jdk-17.0.10+7
+Default locale: pt_BR, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+
